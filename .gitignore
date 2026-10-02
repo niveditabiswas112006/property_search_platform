@@ -1,0 +1,4 @@
+.rocketride/
+.env
+build/
+.dart_tool/
