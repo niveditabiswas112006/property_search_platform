@@ -2,11 +2,6 @@
 
 A modern, responsive, and visually appealing Flutter application designed for searching, viewing, and exploring properties, inspired by platforms like Housing.com.
 
-## 📱 Screenshots
-
-> **Note to Developer:** You can easily add your screenshots here! Just click the "Edit" (pencil) button on this README in GitHub, and drag-and-drop your screenshot images right into the editor. GitHub will automatically upload them and create the correct links for you!
-
-
 ---
 
 ## 🎨 UI/UX Design, Theming & Responsiveness
