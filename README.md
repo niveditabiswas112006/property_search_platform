@@ -4,13 +4,7 @@ A modern, responsive, and visually appealing Flutter application designed for se
 
 ## 📱 Screenshots
 
-> **Note to Developer:** Please run the app on your emulator or physical device, take screenshots of the Home Screen and Property Details sections, place them in an `assets/screenshots/` folder, and they will appear here!
-
-<div style="display: flex; flex-direction: row; gap: 10px;">
-  <img src="assets/screenshots/screenshot_1.png" alt="Home Screen" width="250"/>
-  <img src="assets/screenshots/screenshot_2.png" alt="Property 3D Tour" width="250"/>
-  <img src="assets/screenshots/screenshot_3.png" alt="Search Section" width="250"/>
-</div>
+> **Note to Developer:** You can easily add your screenshots here! Just click the "Edit" (pencil) button on this README in GitHub, and drag-and-drop your screenshot images right into the editor. GitHub will automatically upload them and create the correct links for you!
 
 ---
 
