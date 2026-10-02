@@ -5,10 +5,7 @@ A modern, responsive, and visually appealing Flutter application designed for se
 ## 📱 Screenshots
 
 > **Note to Developer:** You can easily add your screenshots here! Just click the "Edit" (pencil) button on this README in GitHub, and drag-and-drop your screenshot images right into the editor. GitHub will automatically upload them and create the correct links for you!
-<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/34be551b-f9ea-4dca-b944-986075363f8a" />
-<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/7ad1bc87-8815-4404-b392-05aa08cc0ce6" />
-<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/e755acdf-9d05-417a-952c-17ff85a91172" />
-<img width="717" height="1600" alt="image" src="https://github.com/user-attachments/assets/ad57c258-b51f-4003-b9b9-275ccb35420f" />
+
 
 ---
 
