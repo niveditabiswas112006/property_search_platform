@@ -1,55 +1,54 @@
 # Property Search Platform 🏡
 
-A modern, highly-responsive Flutter application designed for seamless property discovery. This platform allows users to browse handpicked homes, explore new properties, check out nearby hotspots, and view detailed information including 3D property tours.
+A modern, responsive, and visually appealing Flutter application designed for searching, viewing, and exploring properties, inspired by platforms like Housing.com.
+
+## 📱 Screenshots
+
+> **Note to Developer:** Please run the app on your emulator or physical device, take screenshots of the Home Screen and Property Details sections, place them in an `assets/screenshots/` folder, and they will appear here!
+
+<div style="display: flex; flex-direction: row; gap: 10px;">
+  <img src="assets/screenshots/screenshot_1.png" alt="Home Screen" width="250"/>
+  <img src="assets/screenshots/screenshot_2.png" alt="Property 3D Tour" width="250"/>
+  <img src="assets/screenshots/screenshot_3.png" alt="Search Section" width="250"/>
+</div>
 
 ---
 
-## 🎨 UI/UX Design
-- **Modern & Clean Aesthetic**: Emphasizes a minimal and professional look with ample whitespace, clean typography, and rounded corners to make property images stand out.
-- **Micro-interactions & Polish**: Uses subtle animations, smooth page transitions, and interactive elements (like the Heart/Favorite buttons) to keep the user engaged.
-- **Intuitive Navigation**: Features a bottom navigation bar for quick access to Home, Search, Saved properties, and Profile screens.
-- **Categorized Discovery**: Includes horizontal scrollable chips (All, Rent, Buy, For Sale, New) to quickly filter properties based on user intent.
+## 🎨 UI/UX Design, Theming & Responsiveness
 
-## 📱 Theming and Responsiveness
-- **Cross-Platform Consistency**: Designed to provide a native feel on both Android and iOS devices using Flutter's Material Design principles.
-- **Adaptive Layouts**: Uses responsive UI components (like `Expanded`, `Flexible`, `LayoutBuilder`, and `MediaQuery`) to ensure the application scales beautifully across different screen sizes—from compact mobile phones to larger tablets.
-- **Consistent Design Language**: Implements centralized theming for colors, text styles, and button shapes to maintain visual harmony throughout the application.
+The application is built with a strong emphasis on user experience and modern UI paradigms:
+* **Theming**: Utilizes `ThemeData` with a primary blue swatch and a clean `Roboto` typography for a professional look.
+* **Responsiveness**: Designed to adapt across different screen sizes. Custom scroll behaviors (`MaterialScrollBehavior`) are implemented to ensure smooth scrolling across touch, mouse, and stylus inputs, making it seamless on both mobile and web/desktop environments.
+* **Component Architecture**: The UI is broken down into modular components (e.g., `login_sections.dart`, `login_screen.dart`) to maintain clean code and reusability.
 
-## 🛠 Dart Fundamentals and Package Ecosystem
-- **Strongly Typed Models**: Uses strict Dart classes (e.g., `Property` model) with required parameters and null safety to define property data, amenities, and floor plans.
-- **State Management**: Implements clean state lifecycles to handle UI updates effectively when switching between tabs or interacting with properties.
-- **Third-Party Integrations**:
-  - `cupertino_icons`: Used for standard, high-quality iOS-style icons across the app.
-  - `panorama_viewer`: Integrated to provide immersive 360° / 3D virtual tours of the properties, giving users a real-life feel of the homes.
-  - `url_launcher`: Used to handle external links, open maps for locations, or initiate calls to builders/agents.
+## 🛠 Dart Fundamentals & Package Ecosystem
 
-## 🏗 Build Configurations and Deployment Readiness
-- **Release Optimization**: The app is configured for production builds (`flutter build apk --release`), taking advantage of Flutter's tree-shaking (removing unused code/icons) and ahead-of-time (AOT) compilation for maximum performance.
-- **Network Permissions**: Explicitly configured `AndroidManifest.xml` with `<uses-permission android:name="android.permission.INTERNET"/>` to ensure smooth loading of high-quality network images in release mode.
-- **GitHub Actions / Versioning**: Maintains a strict versioning format (`1.0.1`) and leverages GitHub Releases for distributing compiled APKs seamlessly to users.
+The project leverages core Dart fundamentals alongside a robust package ecosystem:
+* **Object-Oriented Models**: Uses strongly typed models (like `Property` in `property_model.dart`) to structure complex data like prices, RERA verification status, floor plans, and amenities.
+* **`panorama_viewer`**: Integrated to provide immersive 360-degree / 3D tours of properties.
+* **`url_launcher`**: Used for redirecting users to external resources or maps.
+* **`cupertino_icons`**: Provides high-quality, iOS-styled iconography alongside standard Material design icons.
+
+## 🚀 Build Configurations & Deployment Readiness
+
+The application is configured for production-grade deployment:
+* **Permissions**: Configured with Android `INTERNET` permissions (`<uses-permission android:name="android.permission.INTERNET"/>`) in `AndroidManifest.xml` to ensure network images load flawlessly in release mode.
+* **Release Optimization**: Uses `--release` build flags to enable Tree-shaking (removing unused fonts/icons) and AOT (Ahead-of-Time) compilation for maximum performance.
+* **Version Control & CI/CD**: Tracked via Git, with build artifacts strictly ignored via `.gitignore` to keep the repository lightweight and ready for GitHub Actions or direct GitHub Releases.
 
 ## 🧩 Frontend Architecture & Imports
-The frontend is logically separated into distinct, maintainable directories:
-- **`lib/models/`**: Contains data structures (`property_model.dart`) that shape how real estate data is consumed.
-- **`lib/screens/`**: Houses the individual UI pages (`login_screen.dart`, `login_sections.dart`, home screens, etc.).
-- **`lib/main.dart`**: The entry point of the application setting up the `MaterialApp` and routing.
 
-**Core Imports Used:**
-- `package:flutter/material.dart` - Core UI library for structural and interactive widgets.
-- `package:panorama_viewer/panorama_viewer.dart` - For rendering the 3D property tours.
-- `package:url_launcher/url_launcher.dart` - For external intents.
+The frontend is strictly separated into modular directories:
+* **Core Imports**: 
+  * `package:flutter/material.dart` for the foundational Material widgets.
+  * `package:flutter/gestures.dart` for advanced pointer and scroll control.
+* **Screens & Sections**: Logic and UI are separated into `login_screen.dart` and modular components within `login_sections.dart`.
+* **State Management & Routing**: Utilizes Flutter's native routing (`initialRoute: '/'`) for navigation and standard stateful/stateless widget composition.
 
 ---
 
-### How to Run Locally
+### Getting Started Locally
 
-1. Ensure you have [Flutter installed](https://docs.flutter.dev/get-started/install).
-2. Clone the repository: `git clone https://github.com/niveditabiswas112006/property_search_platform.git`
-3. Fetch dependencies:
-   ```bash
-   flutter pub get
-   ```
-4. Run the app:
-   ```bash
-   flutter run
-   ```
+1. Ensure you have [Flutter installed](https://docs.flutter.dev/get-started/install) and running.
+2. Clone the repository and run `flutter pub get` to fetch the packages.
+3. Run the app using `flutter run` on your connected device or emulator.
